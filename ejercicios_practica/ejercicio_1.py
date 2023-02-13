@@ -8,6 +8,8 @@
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios de matplotlib
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -34,5 +36,14 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
-
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    fig.suptitle('Graficar Y=X**2', fontsize=14)
+    ax.plot(x,y)
+    ax.set_facecolor('whitesmoke')
+    ax.set_title('Funcion cuadratica')
+    ax.set_ylabel('Eje Y')
+    ax.set_xlabel('Eje X')
+    plt.show()
+    
     print("terminamos")

@@ -45,5 +45,17 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    fig.suptitle('Graficar Y=X**2', fontsize=14)
+    ax.plot(x,y1, color='b', marker='^', label='Y1')
+    ax.plot(x,y2,color='g', marker='*',label='Y2')
+    ax.set_facecolor('whitesmoke')
+    ax.set_title('Funcion cuadrática y cúbica')
+    ax.set_ylabel('Eje Y')
+    ax.set_xlabel('Eje X')
+    ax.legend()
+    plt.show()
+    
 
     print("terminamos")

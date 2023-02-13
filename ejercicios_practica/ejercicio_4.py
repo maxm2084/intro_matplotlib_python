@@ -53,5 +53,46 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax3 = fig.add_subplot(2, 2, 3)
+    ax4 = fig.add_subplot(2, 2, 4)
+
+
+    ax1.scatter(x,y1, color='b', marker='.', label='Y')
+    ax1.grid('Solid')
+    ax1.set_facecolor('whitesmoke')
+    ax1.set_title('Funcion Cuadratica')
+    ax1.set_ylabel('Eje Y')
+    ax1.set_xlabel('Eje X')
+    ax1.legend()
+
+    ax2.scatter(x,y2, color='r', marker='+', label='Y')
+    ax2.grid('Solid')
+    ax2.set_facecolor('whitesmoke')
+    ax2.set_title('Funcion Cúbica')
+    ax2.set_ylabel('Eje Y')
+    ax2.set_xlabel('Eje X')
+    ax2.legend()
+
+    ax3.scatter(x,y3, color='y', marker='>', label='Y')
+    ax3.grid('Solid')
+    ax3.set_facecolor('whitesmoke')
+    ax3.set_title('Funcion a la cuarta')
+    ax3.set_ylabel('Eje Y')
+    ax3.set_xlabel('Eje X')
+    ax3.legend()
+
+    ax4.scatter(x,y4, color='m', marker='<', label='Y')
+    ax4.grid('Solid')
+    ax4.set_facecolor('whitesmoke')
+    ax4.set_title('Funcion a la cuarta')
+    ax4.set_ylabel('Eje Y')
+    ax4.set_xlabel('Eje X')
+    ax4.legend()
+
+    plt.show()
+
 
     print("terminamos")
